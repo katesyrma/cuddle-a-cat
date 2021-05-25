@@ -1,0 +1,18 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Add a Cat</h3>
+        <%= simple_form_for @cat do |f| %>
+          <%= f.input :name, placeholder: 'Charlie' %>
+          <%= f.input :gender, placeholder: 'Male/Female/Other' %>
+          <%= f.input :breed, placeholder: 'Persian' %>
+          <%= f.input :color, placeholder: 'Orange' %>
+          <%= f.input :hair_type, placeholder: 'Long-haired' %>
+          <%= f.input :availability, placeholder: 'Availabile' %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

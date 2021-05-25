@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.destroy_all
+User.create(first_name: "Tim", last_name: "Smith", email: "tim@timmy.com", password: "12345678")
+puts User.last
+
+cat1 = Cat.new(name: "George", address: "10, Rose Lane", availability: "True", age: 13, breed: "Tabby", color: "Orange", hair_type: "Fluffy", gender: "Male")
+cat1.user = User.last
+cat1.save!
+
+puts Cat.last

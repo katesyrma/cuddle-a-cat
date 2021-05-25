@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CuddleMyCat1</title>
+    <title>CuddleaCat</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <div class="container">
       <%= render 'shared/navbar' %>
       <p class="notice"><%= notice %></p>
@@ -19,5 +20,20 @@
       <%= render 'shared/flashes' %>
       <%= yield %>
     </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="footer">
+        <div class="footer-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      <div class="footer-copyright">
+      We <i class="fas fa-heart"></i> cats
+    </div>
+
+      </div>
+   </div>
   </body>
 </html>

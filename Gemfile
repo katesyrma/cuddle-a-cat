@@ -35,8 +35,11 @@ gem 'simple_form'
 # ADD DEVISE
 gem 'devise'
 
-# ADDED GEM FOR CLOUDINARY
+# ADDED GEM FOR SECRET KEYS
 gem 'dotenv-rails', groups: [:development, :test]
+
+# ADDED GEM FOR CLOUDINARY
+gem 'cloudinary', '~> 1.16.0'
 
 group :development, :test do
   gem 'pry-byebug'

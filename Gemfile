@@ -35,6 +35,8 @@ gem 'simple_form'
 # ADD DEVISE
 gem 'devise'
 
+# ADDED GEM FOR CLOUDINARY
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
   gem 'pry-byebug'

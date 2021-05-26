@@ -19,7 +19,7 @@ User.destroy_all
 
 file1 = URI.open('https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg')
 file2 = URI.open('https://i.pinimg.com/originals/0f/7c/27/0f7c27f1c593f22134f30bb11ad50144.jpg')
-file3 = URI.open('https://www.aspcapetinsurance.com/media/2242/8-tips-to-prevent-kidney-disease-in-cats.jpg')
+file3 = URI.open('https://i.pinimg.com/originals/c9/1a/ce/c91ace86a786d06e895d00c702ba4e1b.jpg')
 file4 = URI.open('http://trupanion.com/blog/wp-content/uploads/2017/02/cat-1646566_640.jpg')
 file5 = URI.open('http://images6.fanpop.com/image/photos/40600000/Beautiful-Long-Haired-Black-Cat-josepinejackson-40661139-236-324.jpg')
 file6 = URI.open('https://wdef.com/wp-content/uploads/2019/10/lostTabbyCat.jpg')
@@ -28,7 +28,7 @@ file8 = URI.open('https://bengalcatcare.com/wp-content/uploads/2020/08/bengal-ca
 file9 = URI.open('https://fishsubsidy.org/wp-content/uploads/2020/01/bombay-cat-2.jpg')
 file10 = URI.open('https://i.ytimg.com/vi/SugYD-gOr1c/maxresdefault.jpg')
 file11 = URI.open('https://i.pinimg.com/originals/c9/1a/ce/c91ace86a786d06e895d00c702ba4e1b.jpg')
-file12 = URI.open('https://www.aspcapetinsurance.com/media/2242/8-tips-to-prevent-kidney-disease-in-cats.jpg')
+file12 = URI.open('https://www.thegreatcat.org/wp-content/uploads/2020/01/American-Shorthair-Cat-2-1250x834.jpg')
 file13 = URI.open('https://catrosecatrose.files.wordpress.com/2017/03/bombay.jpg')
 file14 = URI.open('https://www.thegreatcat.org/wp-content/uploads/2020/01/American-Shorthair-Cat-2-1250x834.jpg')
 file15 = URI.open('https://cdn.pixabay.com/photo/2017/11/04/18/41/american-shorthair-cat-2918492_1280.jpg')

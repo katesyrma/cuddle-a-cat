@@ -1,33 +1,24 @@
+<%= render "shared/banner" %>
 
-<div class="cover mb-4 d-flex align-items-center justify-content-center">
-  <div class="text-center text-black">
-    <h1>PICK A CAT</h1>
-  </div>
-</div>
+
 
 <div class="container">
   <div class="row mt-5">
       <% @cats.each do |cat| %>
         <div class="col-md-4">
 
-          <div class="card" style="width: 18rem;">
-            <%= cl_image_tag cat.photo.key, height: 300, width: 400, crop: :fill, class: "card-img-top" %>
+          <div class="card mb-5" style="width: 18rem;">
+            <%= cl_image_tag cat.photo.key, height: 300, width: 400, crop: :thumb, class: "card-img-top" %>
             <div class="card-body">
 
-              <h5 class="card-title"><%= cat.name %></h5>
-
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+              <h5 class="card-title"><%= link_to cat.name, cat_path(cat) %></h5>
               <ul class="list-group list-group-flush">
-              <li class="list-group-item"><%= cat.color %></li>
-              <li class="list-group-item"><%= cat.address %></li>
+                <li class="list-group-item"><%= cat.address %></li>
                 <li class="list-group-item"><%= cat.breed %></li>
+                <li class="list-group-item"><%= cat.color %></li>
                 <li class="list-group-item"><%= cat.hair_type %></li>
                 <li class="list-group-item"><%= cat.gender %></li>
               </ul>
-
-              <a class="btn btn-primary" href="#" class="card-link">Book</a>
-              <a class="btn btn-warning" href="#" class="card-link">Edit</a>
 
             </div>
           </div>
@@ -35,6 +26,8 @@
         <% end %>
   </div>
 </div>
-<%= link_to 'Upload a cat', new_cat_path, class: 'btn btn-flat' %>
+
+
+
 
 

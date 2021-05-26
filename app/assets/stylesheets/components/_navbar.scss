@@ -1,6 +1,8 @@
 .navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+ justify-content: space-between;
+ background: white;
+ width: 100vw;
+ opacity: 0.7;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -11,10 +13,4 @@
   width: 40px;
 }
 
-#logo_pic {
-  width: 50px;
-}
 
-#login-navbar {
- background-color: #e93b81;
-}

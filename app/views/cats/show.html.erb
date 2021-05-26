@@ -1,11 +1,24 @@
 
-<h1>GEORGE</h1>
-<h3>A really lovable guy</h3>
-<p>This cat is the best cat and you'll want to love him forever...but you can't.</p>
-<h3>His Qualities</h3>
-<ul>
-  <li>Male</li>
-  <li>Persian</li>
-  <li>Orange</li>
-</ul>
-<%= link_to 'Go Back to Cats', cats_path, class: 'btn btn-flat' %>
+<div class="container mb-5">
+  <h1><%= @cat.name %></h1>
+  <div class="row">
+    <div class="col">
+      <%= cl_image_tag @cat.photo.key, height: 300, width: 400, crop: :fill %>
+    </div>
+    <div class="col d-flex flex-column justify-content-between">
+      <h4><%= @cat.gender %> | <%= @cat.age %> years old</h4>
+      <p><%= @cat.address %></p>
+      <p> Availability: <%= @cat.availability %></p>
+
+      <h5>More about me</h5>
+      <ul>
+        <li>My breed: <%= @cat.breed %></li>
+        <li>My color: <%= @cat.color %></li>
+        <li>I like to wear my hair: <%= @cat.hair_type %></li>
+      </ul>
+    </div>
+  </div>
+
+  <%= link_to 'Go Back to Cats', cats_path, class: 'btn btn-primary mt-5'%>
+</div>
+

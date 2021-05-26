@@ -10,4 +10,5 @@ class Cat < ApplicationRecord
   validates :color, presence: true
   validates :hair_type, presence: true
   validates :gender, presence: true
+  validates :photo, presence: true
 end

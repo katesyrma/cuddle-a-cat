@@ -8,8 +8,11 @@
           <%= f.input :gender, placeholder: 'Male/Female/Other' %>
           <%= f.input :breed, placeholder: 'Persian' %>
           <%= f.input :color, placeholder: 'Orange' %>
+          <%= f.input :age %>
           <%= f.input :hair_type, placeholder: 'Long-haired' %>
+          <%= f.input :address, placeholder: '10 Rose Lane' %>
           <%= f.input :availability, placeholder: 'Availabile' %>
+          <%= f.input :photo, as: :file %>
           <%= f.submit class: 'btn btn-flat' %>
         <% end %>
       </div>

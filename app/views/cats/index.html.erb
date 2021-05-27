@@ -1,35 +1,30 @@
-<%= render "shared/banner" %>
 
 
 
-<div class="container">
+<div class="container d-flex">
   <div class="row mt-5">
-      <% @cats.each do |cat| %>
-        <div class="col-md-4">
-
-          <div class="card mb-5" style="width: 18rem;">
-            <%= cl_image_tag cat.photo.key, height: 300, width: 400, crop: :thumb, class: "card-img-top" %>
-            <div class="card-body">
-
-              <h5 class="card-title"><%= link_to cat.name, cat_path(cat) %></h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><%= cat.address %></li>
-                <li class="list-group-item"><%= cat.breed %></li>
-                <li class="list-group-item"><%= cat.color %></li>
-                <li class="list-group-item"><%= cat.hair_type %></li>
-                <li class="list-group-item"><%= cat.gender %></li>
-              </ul>
-
-            </div>
-          </div>
+    <% @cats.each do |cat| %>
+    <%= link_to cat_path(cat) do %>
+    <div class="card-trip text-decoration-none">
+      <%= cl_image_tag cat.photo.key, height: 300, width: 400, crop: :thumb, class: "card-img-top" %>
+      <div class="card-trip-infos">
+        <div>
+          <h2 class="text-decoration-none"><%= cat.name %></h2>
+          <p class="text-decoration-none">This is a subtitle</p>
         </div>
-        <% end %>
+        <!-- <h2 class="card-trip-pricing">£99.99</h2> -->
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      </div>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+  <div class="map" id="map">
+
   </div>
 </div>
 
-<div class="map" id="map">
 
-</div>
 
 
 

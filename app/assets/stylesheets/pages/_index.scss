@@ -6,3 +6,8 @@
   height: 400px;
   border: 1px solid black;
 }
+
+a, a:hover, a:focus {
+    text-decoration: none !important;
+    color: unset;
+}

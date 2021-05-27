@@ -1,13 +1,10 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="#">
-    <%= image_tag "logo.png", id: "logo_pic" %>
-    <h3><strong>C</strong>uddle <strong>A</strong> ca<strong>T</strong></h3>
-  </a>
+    <%= link_to cats_path do %>
+  <%= image_tag ('logo.png'), class: 'logo' %>
+<% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
@@ -24,7 +21,7 @@
       <% end %>
 
       <li class="nav-item mr-5">
-        <%= link_to"Add a cat", new_cat_path %>
+        <%= link_to"Add a cat", new_cat_path, class: 'cat-link'%>
       </li>
       <% if current_user %>
       <li class="nav-item dropdown">

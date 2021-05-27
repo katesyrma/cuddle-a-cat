@@ -7,9 +7,12 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "flatpickr/dist/flatpickr";
 
 // Your CSS partials
 @import "components/banner";
+@import "components/bookingcard";
 @import "components/index";
 @import "components/footer";
 @import "pages/index";
+

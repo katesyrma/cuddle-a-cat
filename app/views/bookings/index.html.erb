@@ -1,0 +1,29 @@
+<div class="container">
+
+  <% @bookings.each do |booking| %>
+  <div class="card-booking m-5">
+    <%= cl_image_tag booking.cat.photo.key, height: 300, width: 400, crop: :fill %>
+
+    <div class="card-booking-infos">
+      <div>
+        <h2><%= booking.cat.name %></h2>
+
+        <p>from <%= booking.check_in %></p>
+        <p>till <%= booking.check_out %></p>
+
+      </div>
+
+      <h2 class="card-booking-infos-address"><i class="fas fa-location-arrow"></i> <%= booking.cat.address %></h2>
+
+      <%= link_to "Remove",booking_path(booking), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-warning" %>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
+    </div>
+  </div>
+
+  <% end %>
+
+  <div class="container">
+    <h1>MAP</h1>
+  </div>
+
+</div>

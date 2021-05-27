@@ -1,6 +1,7 @@
 class Cat < ApplicationRecord
   belongs_to :user
   has_one_attached :photo
+  has_many :bookings, dependent: :destroy
 
   validates :name, presence: true, uniqueness: true
   validates :address, presence: true

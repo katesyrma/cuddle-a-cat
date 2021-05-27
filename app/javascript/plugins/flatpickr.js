@@ -4,4 +4,4 @@ const initFlatpickr = () => {
   flatpickr(".datepicker", {});
 }
 
-export { initFlatpickr };
+export default initFlatpickr;

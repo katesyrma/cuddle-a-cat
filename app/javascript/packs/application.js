@@ -24,7 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { initFlatpickr } from "../plugins/flatpickr";
+import initFlatpickr from "../plugins/flatpickr";
 import { initMapbox } from '../plugins/init_mapbox';
 
 // Internal imports, e.g:

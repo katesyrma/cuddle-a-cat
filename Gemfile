@@ -41,6 +41,9 @@ gem 'dotenv-rails', groups: [:development, :test]
 # ADDED GEM FOR CLOUDINARY
 gem 'cloudinary', '~> 1.16.0'
 
+# ADDED GEM FOR GEOCODING
+gem 'geocoder'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

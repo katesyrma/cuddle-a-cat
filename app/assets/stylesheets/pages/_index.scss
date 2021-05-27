@@ -1,3 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
 
+.map {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+}

@@ -11,5 +11,8 @@ class Cat < ApplicationRecord
   validates :color, presence: true
   validates :hair_type, presence: true
   validates :gender, presence: true
-  validates :photo, presence: true
+  # validates :photo, presence: true
+
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end

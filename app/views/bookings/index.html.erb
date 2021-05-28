@@ -1,5 +1,5 @@
 <div class="d-flex">
-  <div class="container mt">
+  <div class="container" id="booking-index">
     <h3 style="text-align: center;">Upcoming bookings</h3>
     <% @bookings.each do |booking| %>
     <div class="card-booking m-5">
@@ -24,7 +24,7 @@
     <% end %>
   </div>
 
-  <div class="container mt">
+  <div class="container">
     <h3 style="text-align: center;">Your cats' bookings</h3>
     <% @my_cats.each do |cat| %>
       <% cat.bookings.each do |booking| %>

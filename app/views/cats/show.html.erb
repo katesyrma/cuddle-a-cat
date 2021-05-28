@@ -1,40 +1,40 @@
 <div class="d-flex">
-<div class="container m-5" id="cat-show">
-  <h1 class="mb-3"><%= @cat.name %></h1>
-  <div class="row">
-    <div class="col">
-      <%= cl_image_tag @cat.photo.key, height: 200, width: 200, crop: :fill %>
-    </div>
-    <div class="col d-flex flex-column justify-content-between">
-      <h5 class="mb-4"><% if @cat.gender = "Male" %>
-            <%= "♂" %>
+  <div class="container m-5" id="cat-show">
+    <h1 class="mb-3"><%= @cat.name %></h1>
+    <div class="row">
+      <div class="col">
+        <%= cl_image_tag @cat.photo.key, height: 200, width: 200, crop: :fill %>
+      </div>
+      <div class="col d-flex flex-column justify-content-between">
+        <h5 class="mb-4"><% if @cat.gender = "Male" %>
+          <%= "♂" %>
           <% else %>
-            <%= "♀︎" %>
+          <%= "♀︎" %>
           <% end %>
-        <%= @cat.age %> years old</h5>
-      <p class="mb-4">📍 <%= @cat.address %></p>
+          <%= @cat.age %> years old</h5>
+          <p class="mb-4">📍 <%= @cat.address %></p>
 
-      <p>More about me</p>
+          <p>More about me</p>
 
-      <ul class="mb-3" style="list-style: none">
-        <li>My breed: <%= @cat.breed %></li>
-        <li>My color: <%= @cat.color %></li>
-        <li>I like to wear my hair: <%= @cat.hair_type %></p>
-      </ul>
+          <ul class="mb-3" style="list-style: none">
+            <li>My breed: <%= @cat.breed %></li>
+            <li>My color: <%= @cat.color %></li>
+            <li>I like to wear my hair: <%= @cat.hair_type %></p>
+            </ul>
+          </div>
+        </div>
+        <%= link_to 'Go back', cats_path, class: 'btn btn-primary mt-2'%>
+      </div>
+
+      <div class="container">
+        <div class="form-wrapper mt-5" id="booking-form">
+          <h2 class="mb-5">When do you want to cuddle <%= @cat.name %>? 🤗</h2>
+          <%= simple_form_for [ @cat, @booking ] do |f| %>
+          <%= f.input :check_in, label: "Starting from:", as: :string, required: false, input_html: {class: "datepicker"} %>
+          <%= f.input :check_out, label: "Until:", as: :string, required: false, input_html: {class: "datepicker"} %>
+          <%= f.button :submit, "Book", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
-  <%= link_to 'Go back', cats_path, class: 'btn btn-primary mt-2'%>
-</div>
-
-<div class="container">
-  <div class="form-wrapper mt-5" id="booking-form">
-    <h2 class="mb-5">When do you want to cuddle <%= @cat.name %>? 🤗</h2>
-    <%= simple_form_for [ @cat, @booking ] do |f| %>
-      <%= f.input :check_in, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.input :check_out, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Book", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
-</div>
 

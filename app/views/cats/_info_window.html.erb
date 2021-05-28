@@ -1,2 +1,19 @@
-<h2><%= cat.name %></h2>
-<p><%= cat.address %></p>
+<!-- original code -->
+<!-- <h2><#= cat.name %></h2>  -->
+<!-- <p><%= cat.address %></p> -->
+
+<div class="little-card">
+  <%= link_to cat_path(cat) do %>
+  <div class="card-trip text-decoration-none mapbox-card">
+      <%= cl_image_tag cat.photo.key, class: "card-img-top" %>
+      <div class="card-trip-infos">
+        <div>
+          <h2 class="text-decoration-none"><%= cat.name %></h2>
+          <p class="text-decoration-none"><%= cat.address %></p>
+        </div>
+        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      </div>
+    </div>
+  <% end %>
+</div>
+

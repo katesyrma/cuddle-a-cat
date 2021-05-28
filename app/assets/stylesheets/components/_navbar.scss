@@ -1,7 +1,7 @@
 .navbar-lewagon {
  display: flex;
  justify-content: space-between;
- background: #F4F4F4;
+ background: #FDCBDE;
  width: 100vw;
  opacity: 1;
 }
@@ -11,7 +11,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 50px;
 }
 
 
@@ -21,7 +21,8 @@
 
 .cat-link {
   font-size: 20px;
-  margin-top: 10px;
+  font-weight: 500;
+  margin-top: 30px;
   margin-right: 0px;
   text-decoration: none !important;
   color: black;
@@ -30,3 +31,17 @@
   }
 }
 
+.sign-up {
+  margin-right: 20px;
+}
+
+.nav-item {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+
+}
+
+.logo-text {
+  margin-right: 40px;
+}

@@ -7,7 +7,7 @@ require "open-uri"
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.destroy_all
+# User.destroy_all
 # User.create(first_name: "Tim", last_name: "Smith", email: "tim@timmy.com", password: "12345678")
 # puts User.last
 
@@ -38,31 +38,65 @@ file18 = URI.open('https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_f
 file19 = URI.open('https://www.petsworld.in/blog/wp-content/uploads/2015/07/Bombay_Black.jpg')
 file20 = URI.open('https://i.pinimg.com/600x315/59/2d/3e/592d3ea548f513f7f5a12c2c3d456577.jpg')
 
-caidleigh = User.create(first_name: "Caidleigh", last_name: "Murphy", email: "caitleigh@test.com", password: "12345678", )
-kate = User.create(first_name: "Kate", last_name: "Syrmakesi", email: "kate@test.com", password: "12345678")
-alessandro = User.create(first_name: "Alessandro", last_name: "Carta", email: "alessandro@test.com", password: "12345678")
-tommas = User.create(first_name: "Tommas", last_name: "Mueller", email: "t.mueller@gmail.com", password: "abcd1234")
-andrew = User.create(first_name: "Andrew", last_name: "Smith", email: "a.smith@gmail.com", password: "abcd1234")
-sabine = User.create(first_name: "Sabine", last_name: "Mauermann", email: "sab1990@gmail.com", password: "abcd1234")
-jannike = User.create(first_name: "Jannike", last_name: "Brand", email: "j.brand@gmail.com", password: "abcd1234")
-melissa = User.create(first_name: "Melissa", last_name: "Otto", email: "m.otto@gmail.com", password: "abcd1234")
-johannes = User.create(first_name: "Johannes", last_name: "Bauer", email: "j.bauer@gmail.com", password: "abcd1234")
-fede = User.create(first_name: "Fede", last_name: "Trogu", email: "f.trogu@gmail.com", password: "abcd1234")
+# caidleigh = User.create(first_name: "Caidleigh", last_name: "Murphy", email: "caitleigh@test.com", password: "12345678", )
+# kate = User.create(first_name: "Kate", last_name: "Syrmakesi", email: "kate@test.com", password: "12345678")
+# alessandro = User.create(first_name: "Alessandro", last_name: "Carta", email: "alessandro@test.com", password: "12345678")
+# tommas = User.create(first_name: "Tommas", last_name: "Mueller", email: "t.mueller@gmail.com", password: "abcd1234")
+# andrew = User.create(first_name: "Andrew", last_name: "Smith", email: "a.smith@gmail.com", password: "abcd1234")
+# sabine = User.create(first_name: "Sabine", last_name: "Mauermann", email: "sab1990@gmail.com", password: "abcd1234")
+# jannike = User.create(first_name: "Jannike", last_name: "Brand", email: "j.brand@gmail.com", password: "abcd1234")
+# melissa = User.create(first_name: "Melissa", last_name: "Otto", email: "m.otto@gmail.com", password: "abcd1234")
+# johannes = User.create(first_name: "Johannes", last_name: "Bauer", email: "j.bauer@gmail.com", password: "abcd1234")
+# fede = User.create(first_name: "Fede", last_name: "Trogu", email: "f.trogu@gmail.com", password: "abcd1234")
 
-puts 'Users created'
+# puts 'Users created'
 
-# photo_caidleigh = URI.open('https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY1200_CR103,0,630,1200_AL_.jpg')
-# photo_kate = URI.open('https://i.pinimg.com/originals/14/63/c9/1463c9134102e59df42a7c21c7140590.jpg')
-# photo_alessandro = URI.open('https://www.tz.de/bilder/2020/08/27/90031545/23805885-brad-pitt-schaut-nach-vorne-und-lacht-direkt-in-eine-kamera-1XW3saBWgcec.jpg')
-# photo_tommas = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-how-i-met-your-mother-josh-radnor.jpg')
-# photo_andrew = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-lost-josh-holloway.jpg')
-# photo_sabine = URI.open('http://2.bp.blogspot.com/_isUvlzkZPIQ/Sc23L4KXpyI/AAAAAAAAEas/7aQk7YcbfMA/s320/080124-5top-juliet.hmedium.jpg')
-# photo_jannike = URI.open('https://i.ytimg.com/vi/_PG987POVU4/maxresdefault.jpg')
-# photo_melissa = URI.open('https://upload.wikimedia.org/wikipedia/en/5/52/Eleven_%28Stranger_Things%29.jpg')
-# photo_johannes = URI.open('http://thx-trailer.com/replica/Breaking_bad/heisenberg.jpg')
-# photo_fede = URI.open('https://i.pinimg.com/originals/b2/a4/a7/b2a4a70d1a87910e73a1702813e75b53.jpg')
+photo_caidleigh = URI.open('https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY1200_CR103,0,630,1200_AL_.jpg')
+photo_kate = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-friends-lisa-kudrow.jpg')
+photo_alessandro = URI.open('https://www.tz.de/bilder/2020/08/27/90031545/23805885-brad-pitt-schaut-nach-vorne-und-lacht-direkt-in-eine-kamera-1XW3saBWgcec.jpg')
+photo_tommas = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-how-i-met-your-mother-josh-radnor.jpg')
+photo_andrew = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-lost-josh-holloway.jpg')
+photo_sabine = URI.open('http://2.bp.blogspot.com/_isUvlzkZPIQ/Sc23L4KXpyI/AAAAAAAAEas/7aQk7YcbfMA/s320/080124-5top-juliet.hmedium.jpg')
+photo_jannike = URI.open('https://i.ytimg.com/vi/_PG987POVU4/maxresdefault.jpg')
+photo_melissa = URI.open('https://upload.wikimedia.org/wikipedia/en/5/52/Eleven_%28Stranger_Things%29.jpg')
+photo_johannes = URI.open('http://thx-trailer.com/replica/Breaking_bad/heisenberg.jpg')
+photo_fede = URI.open('https://i.pinimg.com/originals/b2/a4/a7/b2a4a70d1a87910e73a1702813e75b53.jpg')
 
-# puts 'Users photos added'
+# ---------------------------------------------
+# CREATE NEW USERS WITH PHOTOS ----------------
+caidleigh = User.new(first_name: "Caidleigh", last_name: "Murphy", email: "caitleigh@test.com", password: "12345678")
+caidleigh.photo.attach(io: photo_caidleigh, filename: 'photo_caidleigh.jpg', content_type: 'image/jpg')
+caidleigh.save!
+kate = User.new(first_name: "Kate", last_name: "Syrmakesi", email: "kate@test.com", password: "12345678")
+kate.photo.attach(io: photo_kate, filename: 'photo_kate.jpg', content_type: 'image/jpg')
+kate.save!
+alessandro = User.new(first_name: "Alessandro", last_name: "Carta", email: "alessandro@test.com", password: "12345678")
+alessandro.photo.attach(io: photo_alessandro, filename: 'photo_alessandro.jpg', content_type: 'image/jpg')
+alessandro.save!
+tommas = User.new(first_name: "Tommas", last_name: "Mueller", email: "t.mueller@gmail.com", password: "abcd1234")
+tommas.photo.attach(io: photo_tommas, filename: 'photo_tommas.jpg', content_type: 'image/jpg')
+tommas.save!
+andrew = User.new(first_name: "Andrew", last_name: "Smith", email: "a.smith@gmail.com", password: "abcd1234")
+andrew.photo.attach(io: photo_andrew, filename: 'photo_andrew.jpg', content_type: 'image/jpg')
+andrew.save!
+sabine = User.new(first_name: "Sabine", last_name: "Mauermann", email: "sab1990@gmail.com", password: "abcd1234")
+sabine.photo.attach(io: photo_sabine, filename: 'photo_sabine.jpg', content_type: 'image/jpg')
+sabine.save!
+jannike = User.new(first_name: "Jannike", last_name: "Brand", email: "j.brand@gmail.com", password: "abcd1234")
+jannike.photo.attach(io: photo_jannike, filename: 'photo_jannike.jpg', content_type: 'image/jpg')
+jannike.save!
+melissa = User.new(first_name: "Melissa", last_name: "Otto", email: "m.otto@gmail.com", password: "abcd1234")
+melissa.photo.attach(io: photo_melissa, filename: 'photo_melissa.jpg', content_type: 'image/jpg')
+melissa.save!
+johannes = User.new(first_name: "Johannes", last_name: "Bauer", email: "j.bauer@gmail.com", password: "abcd1234")
+johannes.photo.attach(io: photo_johannes, filename: 'photo_johannes.jpg', content_type: 'image/jpg')
+johannes.save!
+fede = User.new(first_name: "Fede", last_name: "Trogu", email: "f.trogu@gmail.com", password: "abcd1234")
+fede.photo.attach(io: photo_fede, filename: 'photo_fede.jpg', content_type: 'image/jpg')
+fede.save!
+#-----
+
+puts 'Users photos added'
 
 pet1 = Cat.new(name: "George", address: "Urbanstrasse 85, Berlin", availability: "True", age: 13, breed: "Domestic shorthair", color: "Grey", hair_type: "Short", gender: "Male", user: caidleigh)
 pet1.photo.attach(io: file1, filename: 'cat1.png', content_type: 'image/jpg')

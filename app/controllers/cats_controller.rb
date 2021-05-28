@@ -28,6 +28,8 @@ class CatsController < ApplicationController
   end
 
   def show
+    #@cat = Cat.find(params[:id])
+    @booking = Booking.new
   end
 
   def new

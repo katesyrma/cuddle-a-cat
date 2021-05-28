@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.where(user: current_user)
+    @my_cats = Cat.where(user: current_user)
   end
 
   def new
@@ -15,7 +16,7 @@ class BookingsController < ApplicationController
     @booking.cat = @cat
     @booking.user = current_user
     @booking.save
-    redirect_to bookings(current_user)
+    redirect_to cat_bookings_path(current_user)
   end
 
   def destroy
@@ -29,5 +30,4 @@ class BookingsController < ApplicationController
   def booking_params
     params.require(:booking).permit(:check_in, :check_out)
   end
-
 end

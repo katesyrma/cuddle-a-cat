@@ -1,6 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <%= link_to cats_path do %>
   <%= image_tag ('logo.png'), class: 'logo' %>
+  <h1 class="logo-text"><strong>C</strong>uddle<strong>A</strong><strong>C</strong>at</h1>
 <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,18 +13,17 @@
       <% unless current_user %>
 
       <li class="nav-item active">
-        <%= link_to"Sign up", new_user_registration_path %>
+        <%= link_to"Sign up", new_user_registration_path, class: "sign-up" %>
       </li>
       <li class="nav-item">
         <%= link_to"Sign in", new_user_session_path %>
       </li>
 
       <% end %>
-
-      <li class="nav-item mr-5">
+      <% if current_user %>
+      <li class="nav-item">
         <%= link_to"Add a cat", new_cat_path, class: 'cat-link'%>
       </li>
-      <% if current_user %>
       <li class="nav-item dropdown">
         <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-friends-lisa-kudrow.jpg" />
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

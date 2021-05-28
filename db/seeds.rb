@@ -51,6 +51,19 @@ fede = User.create(first_name: "Fede", last_name: "Trogu", email: "f.trogu@gmail
 
 puts 'Users created'
 
+# photo_caidleigh = URI.open('https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY1200_CR103,0,630,1200_AL_.jpg')
+# photo_kate = URI.open('https://i.pinimg.com/originals/14/63/c9/1463c9134102e59df42a7c21c7140590.jpg')
+# photo_alessandro = URI.open('https://www.tz.de/bilder/2020/08/27/90031545/23805885-brad-pitt-schaut-nach-vorne-und-lacht-direkt-in-eine-kamera-1XW3saBWgcec.jpg')
+# photo_tommas = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-how-i-met-your-mother-josh-radnor.jpg')
+# photo_andrew = URI.open('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-lost-josh-holloway.jpg')
+# photo_sabine = URI.open('http://2.bp.blogspot.com/_isUvlzkZPIQ/Sc23L4KXpyI/AAAAAAAAEas/7aQk7YcbfMA/s320/080124-5top-juliet.hmedium.jpg')
+# photo_jannike = URI.open('https://i.ytimg.com/vi/_PG987POVU4/maxresdefault.jpg')
+# photo_melissa = URI.open('https://upload.wikimedia.org/wikipedia/en/5/52/Eleven_%28Stranger_Things%29.jpg')
+# photo_johannes = URI.open('http://thx-trailer.com/replica/Breaking_bad/heisenberg.jpg')
+# photo_fede = URI.open('https://i.pinimg.com/originals/b2/a4/a7/b2a4a70d1a87910e73a1702813e75b53.jpg')
+
+# puts 'Users photos added'
+
 pet1 = Cat.new(name: "George", address: "Urbanstrasse 85, Berlin", availability: "True", age: 13, breed: "Domestic shorthair", color: "Grey", hair_type: "Short", gender: "Male", user: caidleigh)
 pet1.photo.attach(io: file1, filename: 'cat1.png', content_type: 'image/jpg')
 pet1.save!

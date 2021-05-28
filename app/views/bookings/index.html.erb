@@ -17,7 +17,7 @@
         <h2 class="card-booking-infos-address"><i class="fas fa-location-arrow"></i> <%= booking.cat.address %></h2>
 
         <%= link_to "Remove",booking_path(booking), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-warning" %>
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
+        <%= cl_image_tag booking.cat.user.photo.key, class: "card-trip-user avatar-bordered" %>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
               <p>till <%= booking.check_out %></p>
             </div>
 
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
+            <%= cl_image_tag booking.user.photo.key, class: "card-trip-user avatar-bordered" %>
           </div>
        </div>
 

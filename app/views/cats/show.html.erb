@@ -14,7 +14,7 @@
         <%= @cat.age %> years old</h5>
       <p class="mb-4">📍 <%= @cat.address %></p>
 
-      <p>More about me</p>
+      <p><strong>More about me</strong></p>
 
       <ul class="mb-3" style="list-style: none">
         <li>My breed: <%= @cat.breed %></li>
@@ -23,7 +23,7 @@
       </ul>
     </div>
   </div>
-  <%= link_to 'Go back', cats_path, class: 'btn btn-primary mt-2'%>
+  <%= link_to 'Go back', cats_path, class: 'btn'%>
 </div>
 
 <div class="container">
@@ -32,7 +32,7 @@
     <%= simple_form_for [ @cat, @booking ] do |f| %>
       <%= f.input :check_in, as: :string, required: false, input_html: {class: "datepicker"} %>
       <%= f.input :check_out, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Book", class: "btn btn-primary" %>
+      <%= f.button :submit, "Book", class: "btn" %>
     <% end %>
   </div>
 </div>

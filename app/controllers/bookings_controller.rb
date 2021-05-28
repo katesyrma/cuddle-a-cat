@@ -15,7 +15,7 @@ class BookingsController < ApplicationController
     @booking.cat = @cat
     @booking.user = current_user
     @booking.save
-    redirect_to bookings(current_user)
+    redirect_to cat_bookings_path(current_user)
   end
 
   def destroy

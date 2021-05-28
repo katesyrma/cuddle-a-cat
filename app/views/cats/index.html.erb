@@ -9,8 +9,7 @@
           <h2 class="text-decoration-none"><%= cat.name %></h2>
           <p class="text-decoration-none"><%= cat.address %></p>
         </div>
-        <!-- <p class="card-trip-pricing"><%= cat.gender %></p> -->
-        <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+        <%= cl_image_tag cat.user.photo.key, class: "card-trip-user avatar-bordered" %>
       </div>
     </div>
     <% end %>

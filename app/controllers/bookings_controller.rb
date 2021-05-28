@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.where(user: current_user)
+    @my_cats = Cat.where(user: current_user)
   end
 
   def new
@@ -29,5 +30,4 @@ class BookingsController < ApplicationController
   def booking_params
     params.require(:booking).permit(:check_in, :check_out)
   end
-
 end
